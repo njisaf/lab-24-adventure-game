@@ -1,0 +1,19 @@
+@import "theme";
+
+game-history {
+  margin: 5px;
+  ol {
+    padding: 0;
+    list-style: none;
+  li {
+    padding: 5px;
+    border-radius: 5px;
+    color: $brand-white;
+    background-color: $brand-secondary;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+}
