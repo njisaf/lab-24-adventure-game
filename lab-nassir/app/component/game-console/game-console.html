@@ -1,0 +1,12 @@
+<section class="game-console">
+  <form name="gameconsole" novalidate>
+    <label for="direction"> Direction: </label>
+    <select name="direction" ng-model="gameConsoleCtrl.moveDirection">
+      <option ng-repeat="direction in gameConsoleCtrl.directions" value="{{direction}}">
+        {{direction}}
+      </option>
+    </select>
+
+    <button type="button" ng-click="gameConsoleCtrl.movePlayer()"> MOVE </button>
+  </form>
+</section>

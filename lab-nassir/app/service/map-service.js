@@ -69,5 +69,5 @@ function mapService($log) {
     },
   };
 
-
+  return service;
 }

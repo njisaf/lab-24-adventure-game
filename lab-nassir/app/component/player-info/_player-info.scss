@@ -1,0 +1,10 @@
+@import "theme";
+
+player-info {
+  background-color: $brand-white;
+
+  p span {
+    color: $brand-secondary;
+    font-weight: bold;
+  }
+}
