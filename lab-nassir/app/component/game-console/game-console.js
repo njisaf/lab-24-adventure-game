@@ -3,7 +3,7 @@
 const angular = require('angular');
 const ngAdventure = angular.module('ngAdventure');
 
-ngAdventure.component('gameControl', {
+ngAdventure.component('gameConsole', {
   template: require('./game-console.html'),
   controller: 'GameConsoleController',
   controllerAs: 'gameConsoleCtrl',
