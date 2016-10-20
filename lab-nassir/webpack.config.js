@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const plugins = [
   new HTMLPlugin({
-    template: `${__dirname}/app/index.html`,
+    template: `${__dirname}/app/html/index.html`,
   }),
   new ExtractTextPlugin('bundle.css'),
 ];
