@@ -16,10 +16,12 @@ function GameConsoleController($log, playerService) {
 
   this.directions = ['north', 'south', 'east', 'west'];
   this.moveDirection = this.directions[0];
+  this.locationTester = this.directions[0];
 
   this.movePlayer = function() {
     playerService.movePlayer(this.moveDirection)
     .then(loc => {
+      this.locationTester = loc;
       $log.debug(`Player at location ${loc}`);
     })
     .catch(err => {
